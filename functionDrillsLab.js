@@ -22,10 +22,10 @@ helloWorld()
     Write an arrow function called 'jsNinja' that returns the string: 'I am a JavaScript ninja!'
 */
 
-function jsNinja () {
-  console.log ('I am a JavaScript')
+const jsNinja = () => {
+ return 'I am a JavaScript ninja'
 }
-jsNinja()
+console.log(jsNinja())
 
 ////////////////// PROBLEM 3 ////////////////////
 /*
@@ -37,7 +37,7 @@ jsNinja()
 function printName (name) {
   console.log (name)
 }
-printName('Cameron')
+printName('Alex')
 
 ////////////////// PROBLEM 4 ////////////////////
 /*
@@ -52,7 +52,7 @@ printName('Cameron')
 
 function greeting(name) {
   name = String(name)
-  console.log ('Hello, ' name)
+  console.log (`Hello, ${name}`)
 }
 greeting('Freya')
 
@@ -67,9 +67,14 @@ greeting('Freya')
     Brownie points if you use a ternary statement (only spend significant time on this if you have wiggle room)
 */
 
-//CODE HERE
-
-
+const compareNums = (num1, num2) => {
+  if (num1 > num2){
+  console.log (num1)
+} else {
+  console.log(num2)
+}
+}
+compareNums(5, 8)
 ////////////////// PROBLEM 6 ////////////////////
 /*
   Create a function called add that takes in two parameters 
@@ -78,8 +83,13 @@ greeting('Freya')
   Create a variable outside the function called 'sum' and set it equal to add invoked (called), passing in 2 arguments.
 */
 
-//CODE HERE
-
+function  add(num, num2){
+num = +num
+num2 = +num2
+return num + num2
+}
+let sum = add(15, 5)
+console.log(sum)
 
 ////////////////// PROBLEM 7 ////////////////////
 
@@ -94,7 +104,7 @@ const exclaim = function(str) {
 
 // arrow
 // declaration
-// expression
+ expression
 
 
 
